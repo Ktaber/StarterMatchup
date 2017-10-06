@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#start {
+	background-color: black;
+	border-bottom:3px solid #FFFF00;
+	padding: 15px 50px;
+	overflow: hidden;
+
+}
+
+#start h1{
+	color: #FFFF00;
+	font-family: merriweather;
+	float: left;
+}
+
+nav{
+	overflow: hidden;
+	color: white;
+	float: right;
+}
+
+.Bolded{
+	text-transform: uppercase;
+	font-family: oswald;
+}
+li{
+	font-family: source sans pro;
+}
+
+header nav ul li{
+	float: left;
+	list-style: none;
+	margin-right: 10px;
+}
+
+#quote h2{
+	font-family: merriweather;
+	background-color: #C6C6C6;
+	text-align: center;
+	padding: 10px;
+}
+
+#quote del{
+	color: grey;
+}
+
+#people{
+	overflow: hidden;
+	background:url(../images/coworking.jpg) no-repeat center center;
+	background-size: cover;
+	padding-bottom: 60px;
+}
+aside{
+	float: right;
+	width: 30%;
+	padding: 40px;
+	margin-top: 20px;
+	margin-right: 40px;
+	background-color:rgba(255,255,255,0.7);
+}
+
+.match p{
+	font-family: source sans pro;
+}
+#people h3{
+	font-family: oswald;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	background-color: #FFFF00;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+#columns{
+	overflow: hidden;
+	padding: 5px;
+}
+
+#columns h2{
+	font-family: merriweather;
+}
+
+#columns p h3{
+	font-family: oswald;
+}
+
+
+#columns .col1,
+#columns .col2,
+#columns .col3
+{
+	width: 33.3%;
+	float: right;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	padding: 10px;
+}
+
+
+
+
+
+
+
