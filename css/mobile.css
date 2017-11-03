@@ -1,3 +1,8 @@
+/*mobile*/
+
+*{
+	box-sizing: border-box;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
@@ -23,10 +28,34 @@
 	float: left;
 }
 
+h1{
+	width: 70%;
+
+}
+
 nav{
 	overflow: hidden;
 	color: white;
+	float: left;
+	display: none;
+
+}
+
+.hamburgerMenu{
 	float: right;
+	width: 100px;
+	display: inline;
+	position: absolute;
+
+}
+
+hr{
+	padding-bottom: 5px;
+    border: 0;
+    height: 4px;
+    background-color: yellow;
+    margin: 10px;
+    border-radius: 2px;
 }
 
 .Bolded{
@@ -35,10 +64,12 @@ nav{
 }
 li{
 	font-family: source sans pro;
+	display: block;
+	position: left;
 }
 
 header nav ul li{
-	float: left;
+	/*float: left;*/
 	list-style: none;
 	margin-right: 10px;
 }
@@ -62,7 +93,7 @@ header nav ul li{
 }
 aside{
 	float: right;
-	width: 30%;
+	width: 75%;
 	padding: 40px;
 	margin-top: 20px;
 	margin-right: 40px;
@@ -91,7 +122,7 @@ aside{
 	font-family: merriweather;
 }
 
-#columns p h3{
+#columns p button{
 	font-family: oswald;
 }
 
@@ -100,11 +131,22 @@ aside{
 #columns .col2,
 #columns .col3
 {
-	width: 33.3%;
-	float: right;
+	width: 100%;
+	display: block;
+	margin: auto;
 }
 
-
+button{
+	font-family: oswald;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	background-color: lightgrey;
+	margin-top: 20px;
+	border-radius: 5px;
+	width: 100%;
+	font-weight: bold;
+}
 
 footer{
 	background-color: black;
@@ -118,3 +160,45 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+/*Desktop*/
+
+@media (min-width: 768px){
+aside{
+	width: 30%;
+}
+
+#columns .col1,
+#columns .col2,
+#columns .col3
+{
+	width: 33.3%;
+	float: right;
+}
+
+nav{
+	overflow: hidden;
+	color: white;
+	float: right;
+	display: inline;
+}
+
+header nav ul li{
+	float: left;
+	list-style: none;
+	margin-right: 10px;
+}
+
+.hamburgerMenu{
+	display: none;
+	
+}
+
+}
